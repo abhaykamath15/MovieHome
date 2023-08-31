@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    color: antiquewhite;
+    background-color: #282828;
+    display: grid;
+    grid-template-columns: 1000px;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1;
+    margin-right: 10rem;    
+}
+
+.left-content,.rightcontent{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    color: antiquewhite;
+    margin-top: 2rem;
+    font-size: xx-large;
+}
+
+.navigation{
+    padding: 0.2rem;
+    display: flex;
+    list-style: none;
+    font-size: large;
+}
+
+.Horror{
+    background-color: #086788;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.Crime{
+    background-color: #f46036;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.Drama{
+    background-color: #b33f62;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.Comedy{
+    background-color: #82bb12;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.navigation> .button:hover{
+    background-color: transparent;
+}
+
+.Horror :hover{
+    color: #086788;
+}
+
+.Crime a:hover{
+    color: #f46036;
+}
+
+.Drama a:hover{
+    color: #b33f62;
+}
+
+.Comedy a:hover{
+    color: #82bb12;
+}
+
+.navigation li{
+    margin-right: 1rem;
+}
+
+#logo{
+    margin: 0.5rem;
+    border-style: none;
+    border: 2rem;
+    padding: 0.1rem;
+    border-radius: 1rem;
+    background-color: #282828;
+    position: relative;
+    float: left;
+}
+
+.all-movies{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+
+.current-movie{
+    padding: 3rem;
+}
+
+.cm-img-box img{
+    position: relative;
+    height: 480px;
+    width: 320px;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.img_box img{
+    position: relative;
+    height: 480px;
+    width: 320px;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.slider-container{
+    margin: 15px;
+    width: 100vw;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#ampn{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 100vw;
+    font-size: 48px;
+    text-align: center;
+}
+
+video{
+    object-fit: cover;
+    position: relative;
+}
+
+video:hover + .vidhov{
+    display: block;
+}
+
+.vidhov{
+    background-color: rgba(0,0,0,0.5);
+    top: 1vh;
+    display: none;
+    margin-top: 13.1rem;
+    padding-top: 34.8rem;
+    padding-right: 95rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    font-size: 30px;
+}
+
+
+.content-box{
+    position: absolute;
+    color: antiquewhite;
+    margin: 3rem;
+    border-radius: 2rem;
+    min-width: 95%;
+    top: 10vh;
+    height: 125vh;          
+}
+
+.top-content{
+    position: relative;
+}
+
+.details{
+    top: 40%;
+    margin-left: 10rem;
+    position: absolute;
+}
+
+.desc{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    line-height: 1.2;
+}
+
+.bbutton{
+    position: absolute;
+    top: 25vh;
+    left: 70vw;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(28, 28, 28, 0.3);
+    padding: 30px 55px 30px 55px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.wtbutton{
+    position: absolute;
+    top: 35vh;
+    left: 70vw;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(28, 28, 28, 0.3);
+    padding: 30px 50px 30px 50px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.sbutton{
+    position: absolute;
+    top: 90vh;
+    left: 44.5vw;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(28, 28, 28, 0.3);
+    padding: 30px 55px 30px 55px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.fbutton{
+    position: absolute;
+    top: 70vh;
+    left: 17.5vw;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(28, 28, 28, 0.3);
+    padding: 30px 55px 30px 55px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+form{
+    padding: 2rem;
+    font-size: 32px;
+}
+
+form .btbutton{
+    position: absolute;
+    top: 35vh;
+    left: 30vw;
+    text-decoration: none;
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(28, 28, 28, 0.3);
+    padding: 30px 55px 30px 55px;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+form input{
+    font-size: 24px;
+}
+
+.formbox{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,25%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    padding: 10vh;
+}   
